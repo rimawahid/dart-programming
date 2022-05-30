@@ -30,4 +30,37 @@ main() {
 
   print(s5);
   print(s6);
+
+  //String to int
+  var one = int.parse('1');
+  assert(one == 1);
+
+  //String to double
+  var onePointOne = double.parse('1.1');
+  assert(onePointOne == 1.1);
+
+  //int to string
+  String oneAsString = 1.toString();
+  assert(oneAsString == '1');
+  print(oneAsString == '1');
+
+  //double to string
+  String piAsString = 3.14.toStringAsFixed(2);
+  assert(piAsString == '3.14');
+
+  //when we define a variable , we can define that variable as a constant type that means during the runtime ,we cannot change the value of the variable.so to define a variable as constant in Dart programming language, we have to use the keyword cost.so here we have defined
+
+  const aConstNum = 0; //int Constant
+  const aConstBool = true; //bool constant
+  const aConstString = 'a'; //String constant
+
+  print(aConstNum);
+  print(aConstBool);
+  print(aConstString);
+
+  print(aConstNum.runtimeType);
+  print(aConstString.runtimeType);
+  print(aConstBool.runtimeType);
+
+  
 }
